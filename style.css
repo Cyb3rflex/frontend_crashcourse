@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 50px;
+}
+.ball {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid blue;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  background: brown;
+  animation: animate 1s infinite;
+  position: relative;
+}
+.ball span {
+  border-radius: 50%;
+  width: 300px;
+  height: 500px;
+  background: rgb(194, 155, 155);
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    top: 0;
+  }
+  50% {
+    top: 100px;
+  }
+}
+
+.shadow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: maroon;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  width: 150px;
+  height: 1px;
+  background: maroon;
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  box-shadow: 0px 0px 30px rgb(121, 103, 103);
+  /* top: 0; */
+}
